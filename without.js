@@ -7,7 +7,7 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-const assertArraysEqual = function(eqArrays, array1, array2) {
+const assertArraysEqual = function(eqArrays) {
   if (eqArrays === true) {
     console.log("These are equal!");
   } else if (eqArrays === false) {

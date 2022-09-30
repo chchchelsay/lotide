@@ -8,7 +8,7 @@ const eqArrays = function(array1, array2) {
 };
 
 
-const assertArraysEqual = function(eqArrays, array1, array2) {
+const assertArraysEqual = function(eqArrays) {
   if (eqArrays === true) {
     console.log("These are equal!");
   } else if (eqArrays === false) {
@@ -28,5 +28,5 @@ const flatten = function(nestedArray) {
   }
 };
 
-
-flatten([1, 2, [3, 4], 5, [6]]);
+//TEST CASE
+//console.log(flatten([1, 2, [3, 4], 5, [6]]));

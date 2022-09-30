@@ -11,5 +11,8 @@ const head = function(array) {
 
 };
 
-assertEqual(head([5,6,7]));
-assertEqual(head([]));
+//test examples
+
+//head([1,2,3]);
+//assertEqual(head([5,6,7]));
+//assertEqual(head([]));

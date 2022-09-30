@@ -12,6 +12,11 @@ const tail = function(array) {
   console.log(newArray);
 };
 
-const words = ["Yo", "Lighthouse", "Labs"];
+//test cases
+
+/*const words = ["Yo", "Lighthouse", "Labs"];
 tail(words);
 assertEqual(words.length, 3);
+*/
+
+//tail([1,2,3,4]);

@@ -11,7 +11,7 @@ const eqArrays = function(array1, array2) {
 };
 
 //assertArraysEqual
-const assertArraysEqual = function(eqArrays, array1, array2) {
+const assertArraysEqual = function(eqArrays) {
   if (eqArrays === true) {
     console.log("These are equal!");
   } else if (eqArrays === false) {
@@ -42,12 +42,15 @@ const middle = function(array) {
   }
 };
 
-/* middle(); TEST CASES
-middle([1]);
-middle([1, 2]);
-middle([1, 2, 3]);
-middle([1, 2, 3, 4, 5]);
-middle([1, 2, 3, 4]);
-middle([1, 2, 3, 4, 5, 6]);
 
-*/
+/* middle(); TEST CASES
+
+//console.log(middle([1]));
+//console.log(middle([1, 2]));
+//console.log(middle([1, 2, 3]));
+//console.log(middle([1, 2, 3, 4, 5]));
+//console.log(middle([1, 2, 3, 4]));
+//console.log(middle([1, 2, 3, 4, 5, 6]));
+
+
+
