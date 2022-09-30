@@ -1,4 +1,4 @@
-const eqArrays = function(array1, array2) {
+function eqArrays(array1, array2) {
   if  ((array1.length === array2.length) &&
         array1.every((val, i) => val === array2[i])) {
     return true;
@@ -6,6 +6,7 @@ const eqArrays = function(array1, array2) {
     return false;
   }
 };
+
 
 const assertArraysEqual = function(eqArrays, array1, array2) {
   if (eqArrays === true) {
@@ -15,4 +16,4 @@ const assertArraysEqual = function(eqArrays, array1, array2) {
   }
 };
 
-assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]));
+assertArraysEqual(eqArrays([1,2,3], [1,2,3]));
