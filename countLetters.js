@@ -24,7 +24,7 @@ const countLetters = function(string) {
 //countLetters("lighthouse in the house");
 //l: 1, i: 2, g: 1, h: 4, t: 2, …}
 
-//console.log(countLetters('LHL'));
+console.log(countLetters('TEST'));
 
 /*const slogan = ("lighthouse in the house");
 const numLetter= countLetters(slogan);
