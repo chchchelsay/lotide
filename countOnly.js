@@ -15,19 +15,18 @@ const assertEqual = function(actual, expected) {
 //returns how many instances of each string were found in allItems array inputted into a new object
 
 const countOnly = function(allItems, itemsToCount) {
-  const results = {}
+  const results = {};
 
   for (const item of allItems) {
-    console.log(item);
-  if (itemsToCount[item]) {
-    if (results[item]) {
-    results[item] += 1;
-  } else {
-    results[item] = 1;
+    if (itemsToCount[item]) {
+      if (results[item]) {
+        results[item] += 1;
+      } else {
+        results[item] = 1;
+      }
+    }
   }
-  }
-}
-    return results;
+  return results;
 };
 
 
@@ -43,11 +42,9 @@ const firstNames = [
   "Joe"
 ];
 
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false});
-
-//assertEqual(actual, expected);
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+//const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false});
+//console.log(result1);
+//assertEqual(result1["Jason"], 1);
+// assertEqual(result1["Karima"], undefined);
+// assertEqual(result1["Fang"], 2);
+// assertEqual(result1["Agouhanna"], undefined);
