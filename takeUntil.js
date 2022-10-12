@@ -1,8 +1,8 @@
-const takeUntil = function(array, condition) {
+const takeUntil = function(array, callback) {
  let results = [];
 
   for (let item of array) {
-    if (condition(item)) break; 
+    if (callback(item)) break; 
     results.push(item);
   }
 
