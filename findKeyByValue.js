@@ -2,7 +2,7 @@ const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`🥰🥰🥰 Assertion Passed: ${actual} === ${expected}`);
   } else if (actual !== expected) {
-    console.log(`🤪🤪🤪 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`🤢🤢🤢 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
@@ -31,3 +31,5 @@ const letters = {
 console.log(findKeyByValue(letters, "ONE"));
 assertEqual(findKeyByValue(letters, "ONE"), "A");
 assertEqual(findKeyByValue(letters, "ONE"), undefined);
+
+module.exports = findKeybyValue;

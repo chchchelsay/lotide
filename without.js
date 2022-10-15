@@ -38,3 +38,6 @@ assertArraysEqual((eqArrays)(words, ["hello", "world", "lighthouse"]));
 
 
 */
+
+module.exports = without;
+
