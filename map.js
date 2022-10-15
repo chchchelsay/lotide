@@ -25,14 +25,15 @@ const map = function(array, callback) {
 }
 
 
-//TEST MAP
-const results1 = map(words, word => word[0]);
-console.log(results1);
+// //TEST MAP
+// const results1 = map(words, word => word[0]);
+// console.log(results1);
 
-const results2 = map(words, word => word[1]);
-console.log(results2);
+// const results2 = map(words, word => word[1]);
+// console.log(results2);
 
-const results3 = map(words, word => word.toUpperCase(word));
-console.log(results3);
+// const results3 = map(words, word => word.toUpperCase(word));
+// console.log(results3);
 
 //TEST ASSERTARRAYSEQUAL
+module.exports = map;

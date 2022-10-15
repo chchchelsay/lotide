@@ -28,8 +28,8 @@ const letters = {
 };
 
 
-console.log(findKeyByValue(letters, "ONE"));
-assertEqual(findKeyByValue(letters, "ONE"), "A");
-assertEqual(findKeyByValue(letters, "ONE"), undefined);
+// console.log(findKeyByValue(letters, "ONE"));
+// assertEqual(findKeyByValue(letters, "ONE"), "A");
+// assertEqual(findKeyByValue(letters, "ONE"), undefined);
 
-module.exports = findKeybyValue;
+module.exports = findKeyByValue;

@@ -40,39 +40,39 @@ const isObject = function(object) {
 
 //TESTS
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-console.log(eqObjects(ab, ba)); //true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// console.log(eqObjects(ab, ba)); //true
 
-const abc = { a: "1", b: "2", c: "3" };
-console.log(eqObjects(ab, abc)); //false
+// const abc = { a: "1", b: "2", c: "3" };
+// console.log(eqObjects(ab, abc)); //false
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-console.log(eqObjects(cd, dc)); // => true
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// console.log(eqObjects(cd, dc)); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-console.log(eqObjects(cd, cd2)); // => false
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// console.log(eqObjects(cd, cd2)); // => false
 
 
-////SHALLOW object EQUALITY
+// ////SHALLOW object EQUALITY
 
-/*
-const eqObjects = function(object1, object2) {
+// /*
+// const eqObjects = function(object1, object2) {
 
-  const keys1 = Object.keys(object1);
-  const keys2 = Object.keys(object2);
-  if (keys1.length !== keys2.length) {
-    return false;
-  }
-  for (let i of keys1) {
-    if (object1[i] !== object2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-*/
+//   const keys1 = Object.keys(object1);
+//   const keys2 = Object.keys(object2);
+//   if (keys1.length !== keys2.length) {
+//     return false;
+//   }
+//   for (let i of keys1) {
+//     if (object1[i] !== object2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// };
+// */
 
 module.exports = eqObjects;
 

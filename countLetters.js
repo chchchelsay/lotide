@@ -19,16 +19,16 @@ const countLetters = function(string) {
 
 
 
-//TEST CASES
+// //TEST CASES
 
-//countLetters("lighthouse in the house");
-//l: 1, i: 2, g: 1, h: 4, t: 2, …}
+// //countLetters("lighthouse in the house");
+// //l: 1, i: 2, g: 1, h: 4, t: 2, …}
 
-console.log(countLetters('TEST'));
+// console.log(countLetters('TEST'));
 
-/*const slogan = ("lighthouse in the house");
-const numLetter= countLetters(slogan);
-assertEqual(numLetter["h"], 4);
-*/
+// /*const slogan = ("lighthouse in the house");
+// const numLetter= countLetters(slogan);
+// assertEqual(numLetter["h"], 4);
+// */
 
 module.exports = countLetters;

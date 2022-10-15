@@ -22,22 +22,22 @@ const without = function(source, itemsToRemove) {
 
 };
 
-without([1, 2, 3], [1]);
+// without([1, 2, 3], [1]);
 
-/* 
+// /* 
 
-test cases from compass
+// test cases from compass
 
-without([1, 2, 3], [1]) // => [2, 3]
-without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
+// without([1, 2, 3], [1]) // => [2, 3]
+// without(["1", "2", "3"], [1, 2, "3"]) // => ["1", "2"]
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); 
+// const words = ["hello", "world", "lighthouse"];
+// without(words, ["lighthouse"]); 
 
-assertArraysEqual((eqArrays)(words, ["hello", "world", "lighthouse"]));
+// assertArraysEqual((eqArrays)(words, ["hello", "world", "lighthouse"]));
 
 
-*/
+// */
 
 module.exports = without;
 
