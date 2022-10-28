@@ -1,6 +1,6 @@
 const eqArrays = require('./eqArrays');
 
-//assertArraysEqual works similarly to eqArrays but console.logs statements instead of returning true/false
+//ASSERTARRAYSEQUAL takes in and compares two arrays, then prints an appropriate message based on a perfect match
 
 const assertArraysEqual = function(eqArrays) {
   if (eqArrays === true) {

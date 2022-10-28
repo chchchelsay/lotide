@@ -1,25 +1,7 @@
-const eqObjects = function(object1, object2) {
-  const keys1 = Object.keys(object1);
-  const keys2 = Object.keys(object2);
-  if (keys1.length !== keys2.length) {
-    return false;
-  }
-  for (const key of keys1) {
-    const val1 = object1[key];
-    const val2 = object2[key];
-    const areObjects = isObject(val1) && isObject(val2);
-    if (
-      areObjects && !eqObjects(val1, val2) ||
-      !areObjects && val1 !== val2
-    ) {
-      return false;
-    }
-  }
-  return true;
-};
-const isObject = function(object) {
-  return object !== null && typeof object === 'object'};
-  
+const eqObjects = require('./eqObjects');
+
+/* ASSERTOBJECTSEQUAL: takes in and compares two objects, then logs appropriate message to console.
+*/
 
 const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;  
@@ -32,10 +14,14 @@ if (isObjectEqual) {
     }
   };
 
-// //TESTING
-// const ab = { a: "1", b: "2" };
-// const ba = { b: "2", a: "1" };
+/* //TEST CASES
+const ab = { a: "1", b: "2" };
+const ba = { b: "2", a: "1" };
+const cd = { a: "8", b: "2" };
+const dc = { b: "5", a: "1" };
 
-// assertObjectsEqual(ab, ba); 
+assertObjectsEqual(ab, ba); 
+assertObjectsEqual(cd, dc); 
+*/
 
 module.exports = assertObjectsEqual;

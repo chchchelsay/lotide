@@ -1,18 +1,6 @@
-const eqArrays = function(array1, array2) {
-  if  ((array1.length === array2.length) &&
-        array1.every((val, i) => val === array2[i])) {
-    return true;
-  } else {
-    return false;
-  }
-};
-const assertArraysEqual = function(eqArrays) {
-  if (eqArrays === true) {
-    console.log("These are equal!");
-  } else if (eqArrays === false) {
-    console.log("Not a match!");
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
+
+// LETTERPOSITIONS: returns indices of each occurrence of each letter in a given string
 
 
 const letterPositions = function(sentence) {
@@ -30,9 +18,12 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// letterPositions("lighthouse in the house");
-// letterPositions("hello");
+/* //TEST CASE
 
-// assertArraysEqual(eqArrays(letterPositions("hello").e, [1]));
+console.log(letterPositions("lighthouse in the house"));
+console.log(letterPositions("hello"));
+
+assertArraysEqual(eqArrays(letterPositions("hello").e, [1]));
+*/
 
 module.exports = letterPositions;

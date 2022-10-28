@@ -1,20 +1,8 @@
-const eqArrays = function(array1, array2) {
-  if  ((array1.length === array2.length) &&
-        array1.every((val, i) => val === array2[i])) {
-    return true;
-  } else {
-    return false;
-  }
-};
-const assertArraysEqual = function(eqArrays) {
-  if (eqArrays === true) {
-    console.log("These are equal!");
-  } else if (eqArrays === false) {
-    console.log("Not a match!");
-  }
-};
+const { assert } = require("chai");
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
-const words = ["ground", "control", "to", "major", "tom"];
+// MAP takes in an array and a callback function; returns new array based on callback execution
 
 const map = function(array, callback) {
   const results = [];
@@ -25,15 +13,19 @@ const map = function(array, callback) {
 }
 
 
-// //TEST MAP
-// const results1 = map(words, word => word[0]);
-// console.log(results1);
+ /* //TEST MAP
+const words = ["ground", "control", "to", "major", "tom"];
 
-// const results2 = map(words, word => word[1]);
-// console.log(results2);
+const results1 = map(words, word => word[0]);
+console.log(results1);
 
-// const results3 = map(words, word => word.toUpperCase(word));
-// console.log(results3);
+const results2 = map(words, word => word[1]);
+console.log(results2);
 
-//TEST ASSERTARRAYSEQUAL
+const results3 = map(words, word => word.toUpperCase(word));
+console.log(results3);
+
+assertArraysEqual(eqArrays(map(words, word => word[0]), [ 'g', 'c', 't', 'm', 't' ]));
+*/
+
 module.exports = map;
