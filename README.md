@@ -22,6 +22,20 @@ This project was created and published by Chelsea Dwarika/@chchchelsay as part o
 
 `const results = _.tail([1, 2, 3]) // => [2, 3]`
 
+## SETUP DOCUMENTATION
+
+1) Clone this github repository:
+`git clone git@github.com:chchchelsay/lotide.git`
+
+2) `npm init`
+3) `npm install --save-dev mocha@9.2.2 chai`
+4) update package.json file to say
+"scripts": {
+  `"test": "mocha"`
+}
+5) `npm test` to test all files with mocha/chai tests available
+6) `npm test test/headTest.js` to test a specific file (in this case the head.js function)
+
 ## Documentation
 
 The following functions are currently implemented:
