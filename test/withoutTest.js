@@ -1,3 +1,4 @@
+const assert = require('chai').assert;
 const eqArrays = require('../eqArrays');
 const assertArraysEqual = require('../assertArraysEqual');
 const without = require('../without');

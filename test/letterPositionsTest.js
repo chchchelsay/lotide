@@ -1,3 +1,4 @@
+const assert = require('chai').assert;
 const assertArraysEqual = require('../assertArraysEqual');
 const eqArrays = require('../eqArrays');
 const letterPositions = require('../letterPositions');
