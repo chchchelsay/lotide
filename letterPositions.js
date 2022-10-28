@@ -1,7 +1,4 @@
-const assertArraysEqual = require('./assertArraysEqual');
-
 // LETTERPOSITIONS: returns indices of each occurrence of each letter in a given string
-
 
 const letterPositions = function(sentence) {
   const results = {};
@@ -17,13 +14,5 @@ const letterPositions = function(sentence) {
   } 
   return results;
 };
-
-/* //TEST CASE
-
-console.log(letterPositions("lighthouse in the house"));
-console.log(letterPositions("hello"));
-
-assertArraysEqual(eqArrays(letterPositions("hello").e, [1]));
-*/
 
 module.exports = letterPositions;

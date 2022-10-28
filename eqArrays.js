@@ -1,6 +1,5 @@
 const assertEqual = require('./assertEqual');
 
-
 //EQARRAYS compares two arrays and returns true or false based on a perfect match
 
 const eqArrays = function(array1, array2) {
