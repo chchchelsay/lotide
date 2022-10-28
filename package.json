@@ -1,6 +1,6 @@
 {
   "name": "@chchchelsay/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "library of JS functions used in my Lighthouse Labs program",
   "main": "assertArraysEqual.js",
   "directories": {
